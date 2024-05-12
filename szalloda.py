@@ -1,6 +1,6 @@
 #A kód sajnos nem fut le tökéletesen és hibás néhány
 #helyen, de megpróbáltam implementálni a lehető leglogikusabb módon az algoritmust.
-#A program Visual Studio Code-ban lett megoldva, pyCharmban elképzelhető, hogy több hibakódot ír ki.
+#A program Visual Studio Code-ban lett megoldva, pyCharmban/githubon elképzelhető, hogy több hibakódot ír ki.
 
 from datetime import datetime
 from szoba import Szoba
