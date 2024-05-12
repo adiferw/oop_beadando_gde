@@ -70,7 +70,7 @@ while True:
         Szalloda.szobak_listazasa()
     elif valasztas == "2":
         szobaszam = input("Add meg a szobaszámot! ")
-        datum_str = input("Add meg a foglalás dátumát (ÉÉ-HH-NN formátumban)! ")
+        datum_str = input("Add meg a foglalás dátumát (ÉÉÉÉ-HH-NN formátumban)! ")
         datum = datetime.strptime(datum_str, "%Y-%m-%d")
         if Szalloda.foglalas(szobaszam, datum) != Szalloda.foglalasok():
             print("Sikeres foglalás!")
@@ -81,7 +81,7 @@ while True:
     elif valasztas == "3":
         #Biztosítsd, hogy a lemondások csak létező foglalásokra lehetségesek
         lemondas_szobaszam = int(input("Melyik szobát szeretnéd lemondani? "))
-        lemondas_datum = datetime(input("Melyik dátumra szeretnéd lemondani (ÉÉ-HH-NN formátumban)? "))
+        lemondas_datum = datetime(input("Melyik dátumra szeretnéd lemondani (ÉÉÉÉ-HH-NN formátumban)? "))
         if lemondas_szobaszam == Szalloda.foglalas(szobaszam) and lemondas_datum == Szalloda.foglalas(datum):
             Szalloda.foglalas_lemondasa
             print("Sikeres lemondás!")
